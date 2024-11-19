@@ -3,7 +3,6 @@ import { GetStaticProps, GetStaticPaths } from 'next';
 import products from '@/util/productos.json';
 import Header from '@/components/header/header';
 import Link from 'next/link';
-import product from "@/util/productos.json"
 import { useState } from 'react';
 
 interface ProductPageProps {
