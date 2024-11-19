@@ -1,0 +1,88 @@
+[
+  {
+    "id":"1",
+    "nombre": "DAKITI",
+    "precio": "12000",
+    "imagenes": [
+      "/lentes/DAKITI.png"
+    ],
+    "descripcion": "Descripción de DAKITI"
+  },
+  { 
+    "id":"2",
+    "nombre": "CHULO",
+    "precio": "12000",
+    "imagenes": [
+      "/lentes/CHULO MARRON.png",
+      "/lentes/CHULO NEGRO.png",
+      "/lentes/CHULO GRIS.png"
+    ],
+    "descripcion": "Descripción de CHULO"
+  },
+  { 
+    "id":"3",
+    "nombre": "SAOKO",
+    "precio": "12000",
+    "imagenes": [
+      "/lentes/SAOKO NEGRO BORDES DORADOS.png",
+      "/lentes/SAOKO NEGRO BORDES NEGROS.png"
+    ],
+    "descripcion": "Descripción de SAOKO"
+  },
+  { 
+    "id":"4",
+    "nombre": "BELLACOSO",
+    "precio": "12000",
+    "imagenes": [
+      "/lentes/BELLACOSO.png"
+    ],
+    "descripcion": "Descripción de BELLACOSO"
+  },
+  { 
+    "id":"5",
+    "nombre": "LALA",
+    "precio": "12000",
+    "imagenes": [
+      "/lentes/CHULO MARRON1.png",
+      "/lentes/LALA NEGRO.png"
+    ],
+    "descripcion": "Descripción de LALA"
+  },
+  { 
+    "id":"6",
+    "nombre": "MEDUSA",
+    "precio": "12000",
+    "imagenes": [
+      "/lentes/MEDUSA.png"
+    ],
+    "descripcion": "Descripción de MEDUSA"
+  },
+  { 
+    "id":"7",
+    "nombre": "MOTOMAMI",
+    "precio": "12000",
+    "imagenes": [
+      "/lentes/MOTOMAMI.png"
+    ],
+    "descripcion": "Descripción de MOTOMAMI"
+  },
+  { 
+    "id":"8",
+    "nombre": "CLASSY 101",
+    "precio": "12000",
+    "imagenes": [
+      "/lentes/CLASSY 101 NEGRO.png",
+      "/lentes/CLASSY 101 MARRON.png"
+    ],
+    "descripcion": "Descripción de CLASSY 101"
+  },
+  { 
+    "id":"9",
+    "nombre": "BANDIDA",
+    "precio": "12000",
+    "imagenes": [
+      "/lentes/BANDIDA.png"
+    ],
+    "descripcion": "Descripción de BANDIDA"
+  }
+]

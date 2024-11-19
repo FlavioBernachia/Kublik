@@ -1,5 +1,104 @@
-.homeGeneral{
+.homeGeneral {
+    width: 100vw;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner {
+    position: relative;
+    width: 100vw;
+    height: 98vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.categoryGeneral {
+    display: flex;
     width: 100vw;
     height: 100vh;
-    background-color: wheat;
+    flex-wrap: wrap
+}
+
+.category1 {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 4%, rgba(78,78,78,1) 31%, rgba(143,143,143,1) 58%, rgba(228,228,228,1) 90%);
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-around;
+    cursor: pointer;
+    padding-left: 40px;
+    font-weight:lighter;
+    color: rgb(222, 222, 222);
+    font-size: 50px;
+    z-index: 1;
+}
+
+.category2 {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(228,228,228,1) 0%, rgba(143,143,143,1) 29%, rgba(78,78,78,1) 61%, rgba(0,0,0,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+
+.imagenAnteojo {
+    margin-top: 5%;
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 70%;
+}
+
+.imagenAnteojo:hover {
+    transform: scale(1.1);
+}
+
+.imagenAnteojo2 {
+    margin-top: 0%;
+    margin-left: 28%;
+    transition: transform 0.3s ease;
+    /* Suaviza la animación */
+}
+.imagenAnteojo2:hover{
+    transform: scale(1.1);
+}
+.tituloAnteojo{
+    padding-top: 10%;
+}
+.proximamente{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 20%;
+
+    h2{
+        font-size: 100px;
+        text-align: center;
+        animation: marquee 3s linear infinite;  /* Animación de desplazamiento */
+        z-index: 0;
+    }
+}
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);  /* Inicia fuera de la pantalla, a la derecha */
+    }
+    100% {
+        transform: translateX(-100%); /* Termina fuera de la pantalla, a la izquierda */
+    }
+}
+
+@media (max-width: 480px) {
+    .category1 {
+        width: 100%;
+        height: 70%;
+    }
+
+    .category2 {
+        width: 100%;
+    }
 }

@@ -1,0 +1,104 @@
+
+.cardProduct{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    cursor: pointer;
+    transition: all 0.5 ease;
+}
+.cardProduct:hover{
+  border: 1px solid black;
+  .priceProduct{
+    opacity: 1;
+    visibility: visible;
+  }
+  .nameProduct{
+    opacity: 1;
+    visibility: visible;
+  }
+  .thumbnailContainer{
+    opacity: 1;
+    visibility: visible;
+  }
+  .botonBuy{
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.priceProduct{
+    color: rgb(116, 114, 114);
+    font-size: 25px;
+    font-weight: 700;
+    padding-left: 20px;
+    opacity: 0;
+    visibility: hidden; /* Evita que sea clicable cuando no está visible */
+    transition: opacity 0.5s ease;
+}
+
+.mainImage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.nameProduct{
+    color: rgb(68, 68, 68);
+    font-size: 50px;
+    font-weight: 700;
+    padding-left: 20px;
+    opacity: 0;
+    visibility: hidden; /* Evita que sea clicable cuando no está visible */
+    transition: opacity 0.5s ease;
+}
+
+.mainImage img {
+    width: 100%;
+    border: 2px solid transparent;
+    transition: opacity 0.5s ease-in-out; /* Transición suave en la opacidad */
+  }
+  .thumbnailContainer {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    opacity: 0;
+    visibility: hidden; /* Evita que sea clicable cuando no está visible */
+    transition: opacity 0.5s ease;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .thumbnail {
+    width: 90px;
+    height: 50px;
+    object-fit:cover;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  .thumbnail.selected {
+    border-color: #000;
+    object-fit: cover;
+  }
+  .botonBuy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25%;
+    width: 100%;
+    height: 25%;
+    color: white;
+    font-size: 25px;
+    background-color: #2e2e2e;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    opacity: 0;
+    visibility: hidden; /* Evita que sea clicable cuando no está visible */
+    transition: opacity 0.5s ease;
+  }
+  .botonBuy:hover{
+    background-color: #000;
+  }
