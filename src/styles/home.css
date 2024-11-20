@@ -1,8 +1,9 @@
 .homeGeneral {
     width: 100vw;
-    height: 200vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .banner {
@@ -93,12 +94,69 @@
 }
 
 @media (max-width: 480px) {
-    .category1 {
-        width: 100%;
-        height: 70%;
+    /* General */
+    .homeGeneral {
+        flex-direction: column;
+        padding: 0; /* Elimina márgenes */
     }
 
-    .category2 {
+    .banner {
+        height: 50vh; /* Ajusta el banner a mitad de la pantalla */
+    }
+
+    .banner video {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Categorías */
+    .categoryGeneral {
+        flex-direction: column; /* Apila las categorías en una columna */
+        gap: 20px; /* Espacio entre categorías */
+        height: auto; /* Ajusta la altura automáticamente */
+        padding: 10px; /* Margen interno */
+    }
+
+    .category1,
+    .category2 {
+        width: 100%; /* Ocupan todo el ancho */
+        height: 50vh; /* Misma altura en móvil */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px; /* Separación interna */
+    }
+
+    .imagenAnteojo {
+        width: 100%; /* Ocupan todo el ancho del contenedor */
+        max-height: 70%; /* Mantienen proporción */
+        margin: 0 auto;
+        transition: transform 0.3s ease; /* Animación suave */
+    }
+    .imagenAnteojo2{
+        width: 70%; /* Ocupan todo el ancho del contenedor */
+        max-height: 100%; /* Mantienen proporción */
+        margin: 0 auto;
+        transition: transform 0.3s ease;
+    }
+
+    .category1 h2,
+    .category2 h2 {
+        font-size: 20px; /* Reduce el tamaño del texto en móvil */
+        margin: 10px 0;
+    }
+
+    /* Texto "COMING SOON" */
+    .proximamente {
+        height: auto;
+        padding: 10px;
+        width: 100vw;
+    }
+
+    .proximamente h2 {
+        font-size: 16px; /* Tamaño más pequeño para móviles */
+        animation: none; /* Desactiva el efecto marquee para evitar distracciones */
     }
 }

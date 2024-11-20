@@ -54,6 +54,37 @@
     gap: 10px;
 }
 
+
+@media (max-width: 480px) {
+    .homeProduct {
+        padding: 10px; /* Espaciado interno para mejor visualización */
+    }
+
+    .homeTop {
+        flex-direction: column; /* Apila los elementos en una columna */
+        height: auto; /* Altura ajustable */
+        padding: 10px 0; /* Reduce el espacio vertical */
+    }
+
+    .buttons {
+        font-size: 24px; /* Reduce tamaño de botones */
+        justify-content: center;
+        padding-top: 20px; /* Ajusta el padding */
+    }
+
+    .titleProducts {
+        font-size: 24px; /* Reduce el tamaño del título */
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .productsGrid {
+        grid-template-columns: 1fr; /* Un producto por fila */
+        gap: 15px; /* Espaciado entre tarjetas */
+        margin: 10px; /* Reduce márgenes */
+    }
+}
+
 @media (min-width: 1024px) {
     .productsGrid {
         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
