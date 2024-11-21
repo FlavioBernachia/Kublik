@@ -51,13 +51,13 @@
     padding-left: 20px;
     opacity: 0;
     visibility: hidden; /* Evita que sea clicable cuando no está visible */
-    transition: opacity 0.5s ease;
+    transition: opacity 0.3s ease;
 }
 
 .mainImage img {
     width: 100%;
     border: 2px solid transparent;
-    transition: opacity 0.5s ease-in-out; /* Transición suave en la opacidad */
+    transition: opacity 0.3s ease-in-out; /* Transición suave en la opacidad */
   }
   .thumbnailContainer {
     height: 25%;
@@ -67,7 +67,7 @@
     margin-top: 10px;
     opacity: 0;
     visibility: hidden; /* Evita que sea clicable cuando no está visible */
-    transition: opacity 0.5s ease;
+    transition: opacity 0.3s ease;
     align-items: center;
     justify-content: space-evenly;
   }
@@ -97,7 +97,7 @@
     transition: all 0.5s ease;
     opacity: 0;
     visibility: hidden; /* Evita que sea clicable cuando no está visible */
-    transition: opacity 0.5s ease;
+    transition: opacity 0.3s ease;
   }
   .botonBuy:hover{
     background-color: #000;

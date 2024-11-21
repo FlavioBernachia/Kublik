@@ -1,21 +1,23 @@
+
+
 [
   {
-    "id":"1",
+    "id": "1",
     "nombre": "DAKITI",
     "precio": "12000",
     "imagenes": [
-      "/lentes/DAKITI.png"
+      "/lentes/DAKITI.svg"
     ],
-    "descripcion": "Descripción de DAKITI"
-  },
+    "descripcion": "Los lentes Dakiti combinan estilo, durabilidad y protección, ideales para quienes buscan destacar con elegancia y cuidar su visión al mismo tiempo.\n\n<strong>° Armazón de plástico reforzado:</strong> Diseñado para ofrecer ligereza y resistencia, perfecto para el uso diario sin comprometer el confort.\n<strong>° Lentes con filtro UV 400:</strong> Protege tus ojos del 100% de los rayos UVA y UVB, manteniendo tu visión segura incluso en los días más soleados.\n<strong>° Bisagras de metal:</strong> Aseguran una mayor durabilidad y un ajuste preciso, brindando estabilidad y un toque de calidad superior.\n\nAtrévete a lucir diferente con los Dakiti. Más que unos lentes, son un accesorio que complementará tu estilo mientras cuidas tu salud visual. ¡Haz la diferencia y disfruta de la mejor protección con diseño de primera! 👓✨"
+  },  
   { 
     "id":"2",
     "nombre": "CHULO",
     "precio": "12000",
     "imagenes": [
-      "/lentes/CHULO MARRON.png",
-      "/lentes/CHULO NEGRO.png",
-      "/lentes/CHULO GRIS.png"
+      "/lentes/CHULO MARRON.svg",
+      "/lentes/CHULO NEGRO.svg",
+      "/lentes/CHULO GRIS.svg"
     ],
     "descripcion": "Descripción de CHULO"
   },
@@ -24,8 +26,8 @@
     "nombre": "SAOKO",
     "precio": "12000",
     "imagenes": [
-      "/lentes/SAOKO NEGRO BORDES DORADOS.png",
-      "/lentes/SAOKO NEGRO BORDES NEGROS.png"
+      "/lentes/SAOKO NEGRO BORDES DORADOS.svg",
+      "/lentes/SAOKO CON BORDES NEGROS.svg"
     ],
     "descripcion": "Descripción de SAOKO"
   },
@@ -34,7 +36,7 @@
     "nombre": "BELLACOSO",
     "precio": "12000",
     "imagenes": [
-      "/lentes/BELLACOSO.png"
+      "/lentes/BELLACOSO.svg"
     ],
     "descripcion": "Descripción de BELLACOSO"
   },
@@ -43,8 +45,8 @@
     "nombre": "LALA",
     "precio": "12000",
     "imagenes": [
-      "/lentes/CHULO MARRON1.png",
-      "/lentes/LALA NEGRO.png"
+      "/lentes/CHULO MARRON.svg",
+      "/lentes/LALA NEGRO.svg"
     ],
     "descripcion": "Descripción de LALA"
   },
@@ -53,7 +55,7 @@
     "nombre": "MEDUSA",
     "precio": "12000",
     "imagenes": [
-      "/lentes/MEDUSA.png"
+      "/lentes/MEDUSA.svg"
     ],
     "descripcion": "Descripción de MEDUSA"
   },
@@ -62,7 +64,7 @@
     "nombre": "MOTOMAMI",
     "precio": "12000",
     "imagenes": [
-      "/lentes/MOTOMAMI.png"
+      "/lentes/MOTOMAMI.svg"
     ],
     "descripcion": "Descripción de MOTOMAMI"
   },
@@ -71,8 +73,8 @@
     "nombre": "CLASSY 101",
     "precio": "12000",
     "imagenes": [
-      "/lentes/CLASSY 101 NEGRO.png",
-      "/lentes/CLASSY 101 MARRON.png"
+      "/lentes/CLASSY 101 NEGROS.svg",
+      "/lentes/CLASSY 101 MARRON.svg"
     ],
     "descripcion": "Descripción de CLASSY 101"
   },

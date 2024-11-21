@@ -26,8 +26,8 @@ export const CardProduct: React.FC<CardProductProps> = ({ id, nombre, precio, im
             <div className="cardProduct">
                 <div>
                 <Link href={`/product/${id}`}><div className="info">
-                        <div className="priceProduct"><p>${precio}</p></div>
                         <div className="nameProduct"><p>{nombre}</p></div>
+                        <div className="priceProduct"><p>${precio}</p></div>
                         <div className="carrousel">
                             <div className="mainImage">
                                 <img src={selectedImage} alt={nombre} style={{ opacity: isVisible ? 1 : 0 }} />

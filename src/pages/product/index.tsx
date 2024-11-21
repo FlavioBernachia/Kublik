@@ -1,4 +1,5 @@
 import { HomeProduct } from "@/components/cardProduct/homeProduct";
+import Footer from "@/components/footer/footer";
 import Header from "@/components/header/header"
 
 export default function Product() {
@@ -6,6 +7,7 @@ export default function Product() {
     <>
     <Header/>
     <HomeProduct/>
+    <Footer/>
     </>
   );
 }

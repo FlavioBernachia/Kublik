@@ -4,6 +4,9 @@ import products from '@/util/productos.json';
 import Header from '@/components/header/header';
 import Link from 'next/link';
 import { useState } from 'react';
+import DescriptionBar from '@/components/information/description';
+import MedidasBar from '@/components/information/talles';
+import Footer from '@/components/footer/footer';
 
 interface ProductPageProps {
   product: Product;
@@ -55,6 +58,11 @@ export default function ProductPage({ product }: ProductPageProps) {
           </div>
         </div>
       </div>
+      <div className='information'>
+      <DescriptionBar product={product} />
+      <MedidasBar product={product} />
+      </div>
+      <Footer/>
     </>
   );
 }
