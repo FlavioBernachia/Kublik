@@ -4,10 +4,11 @@ import { onAuthStateChanged } from 'firebase/auth';
 import { Menu } from './menu';
 import Image from 'next/image';
 import Cart from './cart';
+import { User } from 'firebase/auth'; // Importa el tipo User de Firebase
 
 const Header: React.FC = () => {
   const [openMenu, setOpenMenu] = useState(false);
-  const [user, setUser] = useState<any>(null); // Estado para almacenar el usuario autenticado
+  const [user, setUser] = useState<User | null >(null); // Estado para almacenar el usuario autenticado
 
   useEffect(() => {
     // Escuchar cambios en el estado de autenticación del usuario

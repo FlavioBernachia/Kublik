@@ -14,7 +14,7 @@ interface DescriptionBarProps {
   product: Product;
 }
 
-export default function MedidasBar({ product }: DescriptionBarProps) {
+export default function MedidasBar({}: DescriptionBarProps) {
   const [isExpanded, setIsExpanded] = useState(true);
 
   const toggleExpand = () => {

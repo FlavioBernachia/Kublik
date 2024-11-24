@@ -1,8 +1,6 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { useCart } from "../contexts/cartContext"; // Asegúrate de importar el contexto
-import { ref, get } from "firebase/database";
-import { database } from "../../../firebase";
 
 interface CardProductProps {
   id: string;

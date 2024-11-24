@@ -2,6 +2,7 @@ import React from "react";
 import { useAuth } from "../../components/contexts/AuthContext"; // Importa el hook useAuth
 import { signOut } from "firebase/auth"; // Importa la función de cierre de sesión de Firebase
 import { auth } from "../../../firebase"; // Importa la configuración de Firebase
+import Link from "next/link";
 
 interface MenuProps {
   openMenu: boolean;
@@ -29,24 +30,24 @@ export const Menu: React.FC<MenuProps> = ({ openMenu, setOpenMenu }) => {
       </button>
       <ul>
         <li>
-          <a href="/" onClick={() => setOpenMenu(false)}>
+          <Link href="/" onClick={() => setOpenMenu(false)}>
             Home
-          </a>
+          </Link>
         </li>
 
         {/* Mostrar "Register" solo si el usuario no está logueado */}
         {!user && (
           <li>
-            <a href="/register" onClick={() => setOpenMenu(false)}>
+            <Link href="/register" onClick={() => setOpenMenu(false)}>
               Register
-            </a>
+            </Link>
           </li>
         )}
 
         {!user && (<li>
-          <a href="/signin" onClick={() => setOpenMenu(false)}>
+          <Link href="/signin" onClick={() => setOpenMenu(false)}>
             signIn
-          </a>
+          </Link>
         </li>)}
 
         {/* Mostrar la información del usuario si está logueado */}
