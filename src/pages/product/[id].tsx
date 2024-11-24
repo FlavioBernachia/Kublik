@@ -67,19 +67,27 @@ export default function ProductPage({ product }: ProductPageProps) {
   );
 }
 
-// Genera las rutas estáticas para cada producto
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = products.map((product: Product) => ({
+  const paths = products.map((product) => ({
     params: { id: product.id },
   }));
 
-  return { paths, fallback: false }; // fallback: false indica que solo se generarán las rutas definidas
+  return {
+    paths,
+    fallback: false, // o 'blocking', según tus necesidades
+  };
 };
 
-// Carga los datos de un producto específico
+// Obtén los datos de un producto en particular
 export const getStaticProps: GetStaticProps = async (context) => {
-  const { id } = context.params!;
-  const product = products.find((product: Product) => product.id === id) || null;
+  const { id } = context.params as { id: string };
+  const product = products.find((product) => product.id === id);
 
-  return { props: { product } };
+  if (!product) {
+    return { notFound: true };
+  }
+
+  return {
+    props: { product },
+  };
 };
