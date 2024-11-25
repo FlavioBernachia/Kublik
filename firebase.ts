@@ -1,18 +1,17 @@
-// firebase.ts
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getDatabase } from "firebase/database";
 
-// Agrega tu configuración de Firebase (copiada de la consola de Firebase)
+// Configuración de Firebase usando variables de entorno
 const firebaseConfig = {
-    apiKey: "AIzaSyBhRwzt1LgPxuJaPgVMbdHD1PnjuiYnIVc",
-    authDomain: "kublik-everywear.firebaseapp.com",
-    projectId: "kublik-everywear",
-    storageBucket: "kublik-everywear.firebasestorage.app",
-    messagingSenderId: "691433523794",
-    appId: "1:691433523794:web:2f9a3048ff289bf4a0ad8b",
-    measurementId: "G-W4VF8GGC6J"
-  };
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
+};
 
 const app = initializeApp(firebaseConfig);
 

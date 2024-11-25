@@ -1,0 +1,59 @@
+.checkout-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .checkout-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .checkout-item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .checkout-summary {
+    margin-top: 20px;
+    text-align: right;
+  }
+  .form-user {
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-user label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+  }
+  
+  .form-user input,
+  .form-user select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-user button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .form-user button:hover {
+    background-color: #0056b3;
+  }
+  

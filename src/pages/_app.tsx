@@ -8,6 +8,7 @@ import "@/styles/cart.css"
 import "@/styles/productCss/homeProduct.css"
 import "@/styles/productCss/cardProduct.css"
 import "@/styles/productCss/cardProductId.css"
+import "@/styles/checkout/checkout.css"
 import type { AppProps } from "next/app";
 import { AuthProvider } from "@/components/contexts/AuthContext";
 import { CartProvider } from "@/components/contexts/cartContext";
